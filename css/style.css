@@ -133,7 +133,7 @@ header nav .btn-login:hover {
 }
 
 .title p {
-  font-size: 6rem;
+  font-size: 5.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: -3px;
@@ -373,4 +373,4 @@ footer .settings .setting2 a {
 footer .settings .setting2 a:hover {
   text-decoration: underline;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

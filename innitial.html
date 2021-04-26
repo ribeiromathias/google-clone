@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google</title>
   <link rel="sortcut icon" href="./img/Google-favicon-2015.png" type="image/gif" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/innitial.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -19,10 +19,10 @@
 
   <header>
     <nav>
-      <a href="#">Gmail</a>
-      <a href="#">Imagens</a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
+      <a href="https://www.google.com.br/imghp?hl=pt-BR&tab=ri&ogbl" target="_blank">Imagens</a>
       <a href="#"><img src="./img/dots-menu.svg" alt=""></a>
-      <a class="btn-login" href="/innitial.html">Fazer login</a>
+      <a class="avatar" href="/index.html"><img src="img/user.svg"></a>
     </nav>
   </header>
 
@@ -38,40 +38,78 @@
 
     <div class="search">
       <img src="./img/search.svg" alt="search">
-      <input id="words" type="text">
+      <input placeholder="Pesquise no Google ou digite um URL" id="words" type="text">
       <img src="./img/keyboard.svg" alt="keyboard">
       <img src="./img/mic.svg" alt="microphone">
     </div>
+  </div>
 
-    <div class="buttons">
-      <a href="#" class="btn">Pesquisa Google</a>
-      <a href="#" class="btn">Estou com sorte</a>
+  <div class="favorites">
+    <div class="favorite">
+      <a href="#">
+        <img src="img/rocket.svg" alt="">
+        <p>RocketSeat</p>
+      </a>
     </div>
-
-    <div class="translate">
-      <p>Disponibilizado pelo Google em: <a href="#">English</a></p>
+    <div class="favorite">
+      <a href="#">
+        <img src="img/youtube.svg" alt="">
+        <p>YouTube</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="https://www.linkedin.com/in/mathias-ribeiro/" target="_blank">
+        <img src="img/linkedin.svg" alt="">
+        <p>Linkedin</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="#">
+        <img src="img/gmail.svg" alt="">
+        <p>Gmail</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="https://github.com/ribeiromathias" target="_blank">
+        <img src="img/github.svg" alt="">
+        <p>Github</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="#">
+        <img src="img/hotmart.svg" alt="">
+        <p>Hotmart</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="#">
+        <img src="img/udemy.svg" alt="">
+        <p>Udemy</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="#">
+        <img src="img/medium.svg" alt="">
+        <p>Medium</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="#">
+        <img src="img/origamid.svg" alt="">
+        <p>Origamid</p>
+      </a>
+    </div>
+    <div class="favorite">
+      <a href="#">
+        <img src="img/add.svg" alt="">
+        <p>Adicionar ata...</p>
+      </a>
     </div>
   </div>
 
   <footer>
     <div class="copyright">
       <p>© Developed by <a target="_blank" href="https://github.com/ribeiromathias">Mathias Ribeiro <img src="img/github-brands.svg"></a></p>
-    </div>
-
-    <div class="line"></div>
-
-    <div class="settings">
-      <div class="setting1">
-        <a href="#">Sobre</a>
-        <a href="#">Publicidade</a>
-        <a href="#">Negócios</a>
-        <a href="#">Como funciona a Pesquisa</a>
-      </div>
-      <div class="setting2">
-        <a href="#">Privacidade</a>
-        <a href="#">Termos</a>
-        <a href="#">Configurações</a>
-      </div>
     </div>
   </footer>
   <script>

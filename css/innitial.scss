@@ -50,18 +50,10 @@ header {
         text-decoration: underline;
       }
     }
-    .btn-login {
-      background-color: #1a73e8;
-      opacity: 100%;
-      color: white;
-      font-size: 0.9rem;
-      padding: 9px 24px;
-      border-radius: 4px;
-      &:hover {
-        text-decoration: none;
-      }
-      &:hover {
-        box-shadow: 0 0 3px RGBA(26, 115, 232, 1);
+    .avatar {
+      img {
+        width: 30px;
+        height: 30px;
       }
     }
   }
@@ -71,15 +63,12 @@ header {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 79.5vh;
+  height: 37vh;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  @media screen and (max-width: 795px) {
-    height: 73.3vh;
-  }
   @media screen and (max-width: 540px) {
-    height: 81.3vh;
+    height: 45vh;
   }
 }
 
@@ -87,7 +76,7 @@ header {
   display: flex;
   justify-content: center;
   p {
-    font-size: 6rem;
+    font-size: 5.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     letter-spacing: -3px;
@@ -107,11 +96,9 @@ header {
   display: flex;
   max-height: 46px;
   width: 560px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
   @media screen and (max-width: 795px) {
     width: 70%;
-  }
-  &:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   }
   @media screen and (max-width: 375px) {
     width: 265px;
@@ -137,49 +124,66 @@ header {
   }
 }
 
-.buttons {
-  .btn {
-    border-radius: 3px;
-    text-decoration: none;
-    background-color: #f9f9f9;
-    color: #333333;
-    padding: 10px;
-    font-size: 0.9rem;
-    margin: 0 5px;
-    &:hover {
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    }
+.favorites {
+  height: 45vh;
+  display: grid;
+  grid-template-columns: 112px 112px 112px 112px 112px;
+  grid-template-rows: 112px 112px;
+  justify-content: center;
+  @media screen and (max-width: 795px) {
+    grid-template-columns: 112px 112px 112px 112px;
   }
   @media screen and (max-width: 540px) {
-    display: none;
+    grid-template-columns: 112px 112px 112px;
   }
-}
-
-.translate {
-  font-size: 0.82rem;
-  a {
-    text-decoration: none;
-    color: #000099;
-    margin-left: 3px;
+  .favorite {
+    display: grid;
+    justify-content: center;
     &:hover {
-      text-decoration: underline;
+      background-color: #e8e1e1;
+      border-radius: 4px;
+    }
+    a {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      img {
+        width: 48px;
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+        font-size: 0.82rem;
+        color: #000000;
+      }
+    }
+    @media screen and (max-width: 795px) {
+      &:nth-child(5) {
+        display: none;
+      }
+      &:nth-child(10) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 540px) {
+      &:nth-child(4) {
+        display: none;
+      }
+      &:nth-child(8) {
+        display: none;
+      }
     }
   }
 }
 
 footer {
-  height: 12.5vh;
+  height: 10vh;
   background-color: #f2f2f2;
   font-size: 0.92rem;
-  @media screen and (max-width: 795px) {
-    height: 18.7vh;
-  }
-  @media screen and (max-width: 540px) {
-    font-size: 0.8rem;
-  }
   .copyright {
     display: flex;
-    height: 6.2vh;
+    height: 10vh;
     align-items: center;
     justify-content: center;
     padding: 0 30px;
@@ -194,61 +198,6 @@ footer {
         }
         img {
           height: 12px;
-        }
-      }
-    }
-  }
-
-  .line {
-    height: 0.1vh;
-    background-color: #d9d9d9;
-  }
-
-  .settings {
-    display: flex;
-    height: 6.2vh;
-    justify-content: space-between;
-    align-items: center;
-    color: #70757a;
-    padding: 0 30px;
-    @media screen and (max-width: 795px) {
-      flex-direction: column;
-      height: 12.4vh;
-    }
-    .setting1 {
-      display: flex;
-      gap: 25px;
-      @media screen and (max-width: 795px) {
-        align-items: center;
-        justify-content: center;
-        height: 6.2vh;
-      }
-      a {
-        text-decoration: none;
-        color: #70757a;
-        &:hover {
-          text-decoration: underline;
-        }
-        &:nth-child(4) {
-          @media screen and (max-width: 540px) {
-            display: none;
-          }
-        }
-      }
-    }
-    .setting2 {
-      display: flex;
-      gap: 25px;
-      @media screen and (max-width: 795px) {
-        align-items: center;
-        justify-content: center;
-        height: 6.2vh;
-      }
-      a {
-        text-decoration: none;
-        color: #70757a;
-        &:hover {
-          text-decoration: underline;
         }
       }
     }
