@@ -31,6 +31,7 @@ header {
   nav {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap: 22px;
     img {
       width: 16px;
@@ -70,7 +71,7 @@ header {
   height: 79.5vh;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 40px;
   @media screen and (max-width: 795px) {
     height: 73.3vh;
   }
@@ -88,7 +89,7 @@ header {
       font-size: 5rem;
     }
     @media screen and (max-width: 540px) {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
   }
 }
@@ -105,6 +106,9 @@ header {
   }
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (max-width: 375px) {
+    width: 265px;
   }
   img:first-child {
     width: 14px;
@@ -202,9 +206,6 @@ footer {
       flex-direction: column;
       height: 12.4vh;
     }
-    @media screen and (max-width: 540px) {
-      display: none;
-    }
     .setting1 {
       display: flex;
       gap: 25px;
@@ -218,6 +219,11 @@ footer {
         color: #70757a;
         &:hover {
           text-decoration: underline;
+        }
+        &:nth-child(4) {
+          @media screen and (max-width: 540px) {
+            display: none;
+          }
         }
       }
     }

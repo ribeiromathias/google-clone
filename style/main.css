@@ -44,6 +44,9 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   gap: 22px;
 }
 
@@ -99,7 +102,7 @@ header nav .btn-login:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 32px;
+  gap: 40px;
 }
 
 @media screen and (max-width: 795px) {
@@ -132,7 +135,7 @@ header nav .btn-login:hover {
 
 @media screen and (max-width: 540px) {
   .title p {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -156,6 +159,12 @@ header nav .btn-login:hover {
 .search:hover {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 375px) {
+  .search {
+    width: 265px;
+  }
 }
 
 .search img:first-child {
@@ -285,12 +294,6 @@ footer .settings {
   }
 }
 
-@media screen and (max-width: 540px) {
-  footer .settings {
-    display: none;
-  }
-}
-
 footer .settings .setting1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +320,12 @@ footer .settings .setting1 a {
 
 footer .settings .setting1 a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 540px) {
+  footer .settings .setting1 a:nth-child(4) {
+    display: none;
+  }
 }
 
 footer .settings .setting2 {
