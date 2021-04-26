@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link rel="sortcut icon" href="./img/Google-favicon-2015.png" type="image/gif" />
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#">Gmail</a>
+      <a href="#">Imagens</a>
+      <a href="#"><img src="./img/dots-menu.svg" alt=""></a>
+      <a class="btn-login" href="#">Fazer login</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="title">
+      <p id="g">G</p>
+      <p id="o">o</p>
+      <p id="o2">o</p>
+      <p id="g">g</p>
+      <p id="l">l</p>
+      <p id="e">e</p>
+    </div>
+
+    <div class="search">
+      <img src="./img/search.svg" alt="search">
+      <input id="words" type="text">
+      <img src="./img/keyboard.svg" alt="keyboard">
+      <img src="./img/mic.svg" alt="microphone">
+    </div>
+
+    <div class="buttons">
+      <a href="#" class="btn">Pesquisa Google</a>
+      <a href="#" class="btn">Estou com sorte</a>
+    </div>
+
+    <div class="translate">
+      <p>Disponibilizado pelo Google em: <a href="#">English</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      <p>© Developed by <a target="_blank" href="https://github.com/ribeiromathias">Mathias Ribeiro <img src="img/github-brands.svg"></a></p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="settings">
+      <div class="setting1">
+        <a href="#">Sobre</a>
+        <a href="#">Publicidade</a>
+        <a href="#">Negócios</a>
+        <a href="#">Como funciona a Pesquisa</a>
+      </div>
+      <div class="setting2">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Configurações</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    $(function () {
+      var words = [
+        'amor',
+        'baixinho',
+        'coração',
+        'docinho',
+        'escola',
+        'feijão',
+        'gente',
+        'humano',
+        'igualdade',
+        'juventude',
+        'liberdade',
+        'molecagem',
+        'natureza',
+        'obrigado',
+        'proteção',
+        'quero - quero',
+        'riacho',
+        'saudade',
+        'terra',
+        'universo',
+        'vitória',
+        'Xuxa',
+        'zum - zum - zum - zum - zum',
+      ];
+      $('#words').autocomplete({
+        source: words,
+      });
+    });
+  </script>
+</body>
+
+</html>
